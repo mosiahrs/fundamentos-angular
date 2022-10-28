@@ -1,0 +1,5 @@
+<h2>Aprofundando conhecimentos em templates</h2>
+<img [src]="urlImagem" width="300">
+<p>Nome: {{ name | uppercase }}</p>
+<p>Data de Nascimento: {{ dataNascimento | date: "dd/MM/yyyy" }} </p>
+<button class="myButton" (click)="mostrarDob()" type="button">Mostrar DOB</button>

@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#3d94f6;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.lista-produtos{
+	list-style: none;
+	padding-left: 0;
+}
+
+.lista-produtos strong{
+	display: block;
+}
+.lista-produtos span {
+	display: inline-block;
+	padding: 10px;
+	border-radius: 8px;
+	background-color: green;
+	color: white;
+	margin-bottom: 15px;
+}
+.lista-produtos .esgotado{
+	background-color: black;
+}
