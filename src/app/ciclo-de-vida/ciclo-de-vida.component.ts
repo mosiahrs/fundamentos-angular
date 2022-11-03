@@ -1,11 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-ciclo-de-vida',
   templateUrl: './ciclo-de-vida.component.html',
   styleUrls: ['./ciclo-de-vida.component.css']
 })
-export class CicloDeVidaComponent implements OnInit {
+export class CicloDeVidaComponent implements OnInit, OnDestroy {
 
   @Input() texto = ""
  
@@ -16,6 +16,10 @@ export class CicloDeVidaComponent implements OnInit {
     console.log("OnInit disparou")
     
     this.timer = setInterval(() => this.horario = new Date(), 1000);
+  }
+
+  ngOnDestroy(): void {
+      clearInterval(this.timer);
   }
 
 }
